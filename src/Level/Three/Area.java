@@ -7,24 +7,27 @@ public class Area extends Shape {
 
 
     @Override
-    void RectangleArea(double length, double width) {
+    double RectangleArea(double length, double width) {
 
-        System.out.println(length*width);
+//        System.out.println(length*width);
 
+        return length*width;
     }
 
     @Override
-    void SquareArea(double length) {
+    double SquareArea(double length) {
 
-        System.out.println(length*length);
+//        System.out.println(length*length);
 
+        return length*length;
     }
 
     @Override
-    void CircleArea(double radius) {
+    double CircleArea(double radius) {
 
-        System.out.println(Math.PI*radius*radius);
+//        System.out.println(Math.PI*radius*radius);
 
 
+        return Math.PI*radius*radius;
     }
 }

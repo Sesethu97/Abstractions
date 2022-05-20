@@ -5,15 +5,16 @@ package Level.Three;
 // Create an object of class 'Area' and call all the three methods.
 public abstract class Shape {
 
-    abstract void RectangleArea(double length, double width);
-    abstract void SquareArea(double length);
-    abstract void CircleArea(double radius);
+    abstract double RectangleArea(double length, double width);
+    abstract double SquareArea(double length);
+    abstract double CircleArea(double radius);
 
     public static void main(String[] args) {
         Area as = new Area();
-        as.CircleArea(3.5);
-        as.SquareArea(12);
-        as.RectangleArea(16,12);
+
+        System.out.println("Circle area: " +as.CircleArea(3.5));
+        System.out.println("Square area: " +as.SquareArea(12));
+        System.out.println("Rectangle area: "+as.RectangleArea(16,12));
 
 
     }

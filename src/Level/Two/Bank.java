@@ -7,16 +7,17 @@ package Level.Two;
 abstract class Bank {
 
 
-    public abstract void getBalance();
+    public abstract double getBalance();
 
     public static void main(String[] args) {
         BankA a = new BankA();
-        a.getBalance();
+        System.out.println("balance a: " +a.getBalance());
 
         BankB b = new BankB();
-        b.getBalance();
+        System.out.println("balance b: " +b.getBalance());
 
         BankC c = new BankC();
-        c.getBalance();
+        System.out.println("balance c: " +c.getBalance());
+
     }
 }
