@@ -1,9 +1,6 @@
 package Level.Three;
 
 public class Area extends Shape {
-    double length = 12;
-    double width = 15;
-    double radius = 3.5;
 
 
     @Override
